@@ -1,0 +1,61 @@
+	p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em;
+}
+p.important {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+h1 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2em;
+}
+.typewriter {
+  font-family: "Courier New", Courier, monospace;
+ }
+.emphasized {
+  font-style: italic;
+}
+.standout {
+  color: red;
+}
+p.spacey {
+  letter-spacing: 1em;
+  word-spacing: 1em;
+  line-height: 2.4em;
+}
+h3 {
+  text-align: center;
+}
+p.pretty {
+  text-align: justify;
+}
+p.tabbed {
+  text-indent: 1.5em;
+}
+blockquote {
+  color:  #8A2BE2;
+  font-weight: 900;
+}
+p.offset {
+  margin: 2em;
+}
+
+p.boxed{
+  padding-top: .1em;
+  padding-right: .2em;
+  padding-bottom: 0;
+  padding-left: .3em;
+  border-style: solid;
+  border-top: 4px double red; 
+  border-right: 2px solid #666666; 
+  border-bottom: 4px dashed darkviolet; 
+  border-left: 3px dotted #006400;
+}
+
+p#special {
+  color:  #FF1493;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em;
+ 
+}
