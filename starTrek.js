@@ -1,4 +1,6 @@
-// (function() {
+$(document).ready (function () {
+
+
 
 //Global Variables:
 
@@ -26,29 +28,28 @@ function calcTarget(){
 }
 
 function shipOnePoints(){
-	var rand1Number = Math.floor(Math.random()*12)+1;
-	console.log(rand1Number);
-	$("#button1").attr("data-val",rand1Number);
-	
+	var randOneNumber = Math.floor((Math.random()*12)+1);
+	console.log(randOneNumber);
+	$("#button1").attr("data-val",randOneNumber);
 
-	
 }
 
 function shipTwoPoints(){
-	var rand2Number = Math.floor(Math.random()*12)+1;
-	console.log(rand2Number);
-	
+	var randTwoNumber = Math.floor((Math.random()*12)+1);
+	console.log(randTwoNumber);
+	$("#button2").attr("data-val",randTwoNumber);	
 }
 
 function shipThreePoints(){
-	var rand3Number = Math.floor(Math.random()*12)+1;
-	console.log(rand3Number);
-	
+	var randThreeNumber = Math.floor((Math.random()*12)+1);
+	console.log(randThreeNumber);
+	$("#button3").attr("data-val",randThreeNumber);	
 }
 
 function shipFourPoints(){
-	var rand4Number = Math.floor(Math.random()*12)+1;
-	console.log(rand4Number);
+	var randFourNumber = Math.floor((Math.random()*12)+1);
+	console.log(randFourNumber);
+	$("#button4").attr("data-val",randFourNumber);
 }
 
 
@@ -69,9 +70,31 @@ function startGame() {
 		$("#scoreTotal").html(cumulativePoints);
 		numGuesses--;
 		console.log(numGuesses);
+	};
+
+	$("#button2").on("click", function(){
+		console.log("button2 value: "+ $(this).attr("data-val"));
+		cumulativePoints +=$(this).attr("data-val");
+		$("#scoreTotal").html(cumulativePoints);
+		numGuesses--;
+		console.log(numGuesses);
 	});
 
+	$("#button3").on("click", function(){
+		console.log("button3 value: "+ $(this).attr("data-val"));
+		cumulativePoints +=$(this).attr("data-val");
+		$("#scoreTotal").html(cumulativePoints);
+		numGuesses--;
+		console.log(numGuesses);
+	});	
 
+	$("#button4").on("click", function(){
+		console.log("button1 value: "+ $(this).attr("data-val"));
+		cumulativePoints +=$(this).attr("data-val");
+		$("#scoreTotal").html(cumulativePoints);
+		numGuesses--;
+		console.log(numGuesses);
+	});	
 
 
 
@@ -82,3 +105,4 @@ startGame();
 
 
 
+});
